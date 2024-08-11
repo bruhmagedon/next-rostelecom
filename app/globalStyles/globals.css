@@ -1,0 +1,56 @@
+body {
+  font-family: Rostelecom Basis, sans-serif;
+  font-weight: 400;
+  background-color: #1D2533;
+  color: #E8E9EA;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1535px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Реcет дефолтный стилей для кнопки */
+.btn-reset {
+  margin: 0px;
+  padding: 0px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Rostelecom Basis;
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../public/fonts/Rostelecom-Basis-Bold.woff') format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Rostelecom Basis;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../public/fonts/Rostelecom-Basis-Medium.woff') format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Rostelecom Basis;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../public/fonts/Rostelecom-Basis-Regular.woff') format("woff");
+}
+
+/* Для открытия модалок */
+.overflow-hidden {
+  padding-right: 8px;
+  overflow-y: hidden;
+}
+
+
