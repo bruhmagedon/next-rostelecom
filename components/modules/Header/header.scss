@@ -1,0 +1,74 @@
+.header {
+  position: relative;
+  box-shadow:
+    0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 0 8px 0 rgba(0, 0, 0, 0.1);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 15px;
+  }
+  &__burger {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    &:hover {
+      color: #9466ff;
+    }
+    &_image {
+      background-color: rgb(254 243 199);
+      color: red;
+    }
+  }
+  // Центрирование логотипа + поднятие чуть выше
+  &__logo {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-65%);
+  }
+  &__links {
+    display: flex;
+    gap: 32px;
+    &__btn {
+      color: #e8e9ea;
+      &:hover {
+        color: #9466ff;
+      }
+      &--profile {
+        border-radius: 50%;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    // Логотип сносим влево
+    &__logo {
+      left: 15px;
+      transform: translateX(0);
+    }
+    // весь контент прибиваем к правому краю
+    &__container {
+      justify-content: flex-end;
+      padding-top: 24px;
+      padding-bottom: 20px;
+    }
+  }
+  // При разрешении меньше 800 пропадают икноки со 2 по 4
+  .header__links__item:nth-child(n + 2):nth-child(-n + 4) {
+    display: none;
+  }
+
+  // бургер отключаем
+  .header__burger {
+    display: none;
+  }
+}
