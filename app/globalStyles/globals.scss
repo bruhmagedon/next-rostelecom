@@ -1,8 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Rostelecom Basis, sans-serif;
+  font-family:
+    Rostelecom Basis,
+    sans-serif;
   font-weight: 400;
-  background-color: #1D2533;
-  color: #E8E9EA;
+  background-color: #1d2533;
+  color: #e8e9ea;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,12 +23,15 @@ body {
 }
 
 /* Реcет дефолтный стилей для кнопки */
-.btn-reset {
-  margin: 0px;
-  padding: 0px;
+button {
   cursor: pointer;
   background-color: transparent;
+  color: inherit;
   border: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 @font-face {
@@ -28,7 +39,7 @@ body {
   font-family: Rostelecom Basis;
   font-style: normal;
   font-weight: 700;
-  src: url('../../public/fonts/Rostelecom-Basis-Bold.woff') format("woff");
+  src: url("../../public/fonts/Rostelecom-Basis-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -36,7 +47,7 @@ body {
   font-family: Rostelecom Basis;
   font-style: normal;
   font-weight: 500;
-  src: url('../../public/fonts/Rostelecom-Basis-Medium.woff') format("woff");
+  src: url("../../public/fonts/Rostelecom-Basis-Medium.woff") format("woff");
 }
 
 @font-face {
@@ -44,7 +55,7 @@ body {
   font-family: Rostelecom Basis;
   font-style: normal;
   font-weight: 400;
-  src: url('../../public/fonts/Rostelecom-Basis-Regular.woff') format("woff");
+  src: url("../../public/fonts/Rostelecom-Basis-Regular.woff") format("woff");
 }
 
 /* Для открытия модалок */
@@ -52,5 +63,3 @@ body {
   padding-right: 8px;
   overflow-y: hidden;
 }
-
-
